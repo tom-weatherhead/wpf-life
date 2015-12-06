@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Static.xml -->
+
+<pattern>
+  <name>Static</name>
+  <width>23</width>
+  <height>19</height>
+  <rows>
+    <row>c42198</row>
+    <row>ca5294</row>
+    <row>046304</row>
+    <row>000006</row>
+    <row>0</row>
+    <row>6</row>
+    <row>b84308</row>
+    <row>84a494</row>
+    <row>74a492</row>
+    <row>18430c</row>
+    <row>0</row>
+    <row>0</row>
+    <row>410c3</row>
+    <row>a28a2</row>
+    <row>91461</row>
+    <row>68a188</row>
+    <row>145144</row>
+    <row>1228c2</row>
+    <row>0c1806</row>
+  </rows>
+</pattern>

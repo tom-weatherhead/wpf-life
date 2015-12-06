@@ -1,0 +1,94 @@
+﻿<Window x:Class="WPFLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:w="clr-namespace:WPFLife"
+        Title="WPF Life" SizeToContent="WidthAndHeight">
+    <Window.CommandBindings>
+        <CommandBinding Command="w:Command.Clear" Executed="ClearCommand_Executed" />
+        <CommandBinding Command="w:Command.Random" Executed="RandomCommand_Executed" />
+        <CommandBinding Command="w:Command.Remember" Executed="RememberCommand_Executed" />
+        <CommandBinding Command="w:Command.Recall" Executed="RecallCommand_Executed" />
+        <CommandBinding Command="w:Command.Step" Executed="StepCommand_Executed" />
+        <CommandBinding Command="w:Command.Go" Executed="GoCommand_Executed" />
+        <CommandBinding Command="Stop" Executed="StopCommand_Executed" />
+        <CommandBinding Command="Close" Executed="CloseCommand_Executed" />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <ContextMenu x:Key="canvasContextMenu">
+            <!-- The CommandTarget attribute is needed to enable the context menu item.
+                 See: http://social.msdn.microsoft.com/Forums/en-US/wpf/thread/7bd75a7c-eab4-4f3a-967b-94a9534a7455/
+            -->
+            <MenuItem Header="Clear" Command="w:Command.Clear"
+                      CommandTarget="{Binding Path=PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}">
+            </MenuItem>
+            <MenuItem Header="Random" Command="w:Command.Random"
+                      CommandTarget="{Binding Path=PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}">
+            </MenuItem>
+            <MenuItem Header="Remember" Command="w:Command.Remember"
+                      CommandTarget="{Binding Path=PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}">
+            </MenuItem>
+            <MenuItem Header="Recall" Command="w:Command.Recall"
+                      CommandTarget="{Binding Path=PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}">
+            </MenuItem>
+            <MenuItem Header="Step" Command="w:Command.Step"
+                      CommandTarget="{Binding Path=PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}">
+            </MenuItem>
+            <MenuItem Header="Go" Command="w:Command.Go"
+                      CommandTarget="{Binding Path=PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}">
+            </MenuItem>
+            <MenuItem Header="Stop" Command="Stop"
+                      CommandTarget="{Binding Path=PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}">
+            </MenuItem>
+        </ContextMenu>
+    </Window.Resources>
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="Clear" Command="w:Command.Clear"></MenuItem>
+                <MenuItem Header="Random" Command="w:Command.Random"></MenuItem>
+                <MenuItem Header="Remember" Command="w:Command.Remember"></MenuItem>
+                <MenuItem Header="Recall" Command="w:Command.Recall"></MenuItem>
+                <MenuItem Header="Step" Command="w:Command.Step"></MenuItem>
+                <MenuItem Header="Go" Command="w:Command.Go"></MenuItem>
+                <MenuItem Header="Stop" Command="Stop"></MenuItem>
+                <MenuItem Header="Exit" Command="Close"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Image Name="ImageControl" Width="512" Height="512" Margin="10" ContextMenu="{StaticResource canvasContextMenu}"
+               MouseUp="ImageControl_MouseUp">
+        </Image>
+        <StackPanel>
+            <TextBlock Name="tbGenerationMessage" HorizontalAlignment="Center"></TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock>Rules:</TextBlock>
+                <RadioButton Name="rbStandardRules" GroupName="Rules" Click="rbRules_Click">Standard life</RadioButton>
+                <RadioButton Name="rb34Rules" GroupName="Rules" Click="rbRules_Click">3-4 life</RadioButton>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock>Inter-generational delay (in milliseconds):</TextBlock>
+                <ComboBox Name="cbDelay" SelectionChanged="cbDelay_SelectionChanged">
+                    <ComboBoxItem>100</ComboBoxItem>
+                    <ComboBoxItem>300</ComboBoxItem>
+                    <ComboBoxItem>1000</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <CheckBox Name="cbAutoStop" HorizontalAlignment="Center" Click="cbAutoStop_Click">Enable auto-stop</CheckBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnClear" Margin="10" Command="w:Command.Clear">Clear</Button>
+                <Button Name="btnRandom" Margin="10" Command="w:Command.Random">Random</Button>
+                <Button Name="btnRemember" Margin="10" Command="w:Command.Remember">Remember</Button>
+                <Button Name="btnRecall" Margin="10" Command="w:Command.Recall">Recall</Button>
+                <Button Name="btnStep" Margin="10" Command="w:Command.Step">Step</Button>
+                <Button Name="btnGo" Margin="10" Command="w:Command.Go">Go</Button>
+                <Button Name="btnStop" Margin="10" Command="Stop">Stop</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock>Pattern:</TextBlock>
+                <ComboBox Name="cbPatternNames">
+                    <ComboBoxItem>Foo</ComboBoxItem>
+                </ComboBox>
+                <Button Name="btnLoad" Click="btnLoad_Click">Load</Button>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>

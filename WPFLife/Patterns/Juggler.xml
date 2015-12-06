@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Juggler.xml -->
+
+<pattern>
+  <name>Juggler</name>
+  <width>15</width>
+  <height>15</height>
+  <auto-stop>false</auto-stop>
+  <rows>
+    <row>c000</row>
+    <row>a000</row>
+    <row>0000</row>
+    <row>2800</row>
+    <row>0000</row>
+    <row>0a00</row>
+    <row>0000</row>
+    <row>0280</row>
+    <row>0000</row>
+    <row>00a0</row>
+    <row>0000</row>
+    <row>0028</row>
+    <row>0000</row>
+    <row>000a</row>
+    <row>0006</row>
+  </rows>
+</pattern>

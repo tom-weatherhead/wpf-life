@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- PufferTrains.xml -->
+
+<pattern>
+  <name>Puffer Trains</name>
+  <width>9</width>
+  <height>32</height>
+  <rows>
+    <row>04</row>
+    <row>02</row>
+    <row>22</row>
+    <row>1e</row>
+    <row>00</row>
+    <row>00</row>
+    <row>00</row>
+    <row>04</row>
+    <row>02</row>
+    <row>42</row>
+    <row>3e</row>
+    <row>00</row>
+    <row>00</row>
+    <row>00</row>
+    <row>04</row>
+    <row>02</row>
+    <row>82</row>
+    <row>7e</row>
+    <row>00</row>
+    <row>00</row>
+    <row>00</row>
+    <row>00</row>
+    <row>00</row>
+    <row>f0</row>
+    <row>88</row>
+    <row>80</row>
+    <row>498</row>
+    <row>038</row>
+    <row>498</row>
+    <row>80</row>
+    <row>88</row>
+    <row>f0</row>
+  </rows>
+</pattern>

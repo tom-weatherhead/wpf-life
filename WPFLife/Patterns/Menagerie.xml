@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<pattern>
+  <name>Menagerie</name>
+  <width>45</width>
+  <height>26</height>
+  <rows>
+    <row>000010400000</row>
+    <row>000010400000</row>
+    <row>000018c00000</row>
+    <row>6d0000000000</row>
+    <row>cd81cd9c03c0</row>
+    <row>0080555007e0</row>
+    <row>c00018c00ff0</row>
+    <row>c18000001818</row>
+    <row>018018c00ff0</row>
+    <row>8000555007e0</row>
+    <row>d981cd9c03c0</row>
+    <row>5b0000000000</row>
+    <row>000018c00000</row>
+    <row>000010400000</row>
+    <row>000010400000</row>
+    <row>000000000000</row>
+    <row>000000000000</row>
+    <row>000000000000</row>
+    <row>000000000000</row>
+    <row>00c00e000000</row>
+    <row>c0a00e000020</row>
+    <row>c0000e01c018</row>
+    <row>302801c0e060</row>
+    <row>300001c00010</row>
+    <row>000a01c00000</row>
+    <row>000600000000</row>
+  </rows>
+</pattern>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Spinner.xml -->
+
+<pattern>
+  <name>Spinner</name>
+  <width>30</width>
+  <height>12</height>
+  <rows>
+    <row>090006</row>
+    <row>0f0006</row>
+    <row>000</row>
+    <row>0f00c78c</row>
+    <row>d0b0a854</row>
+    <row>58a02a5</row>
+    <row>52a0a858</row>
+    <row>d4b0c78</row>
+    <row>0f0</row>
+    <row>0000018</row>
+    <row>0f00018</row>
+    <row>090</row>
+  </rows>
+</pattern>

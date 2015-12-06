@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Octagons.xml -->
+
+<pattern>
+  <name>Octagons</name>
+  <width>16</width>
+  <height>13</height>
+  <rows>
+    <row>018</row>
+    <row>024</row>
+    <row>024</row>
+    <row>0db</row>
+    <row>1248</row>
+    <row>1248</row>
+    <row>6db6</row>
+    <row>9249</row>
+    <row>9249</row>
+    <row>6db6</row>
+    <row>1248</row>
+    <row>1248</row>
+    <row>0c3</row>
+  </rows>
+</pattern>

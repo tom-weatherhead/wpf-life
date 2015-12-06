@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 3_4Menagerie.xml -->
+
+<pattern>
+  <name>3-4 Menagerie</name>
+  <width>36</width>
+  <height>20</height>
+  <rules>3-4</rules>
+  <rows>
+    <row>e0e020802</row>
+    <row>0040c0c0e</row>
+    <row>404040403</row>
+    <row>000000004</row>
+    <row>000000000</row>
+    <row>000000000</row>
+    <row>000000000</row>
+    <row>000000000</row>
+    <row>e020c0404</row>
+    <row>e0d0c1b0b</row>
+    <row>e06000a1a</row>
+    <row>002000e04</row>
+    <row>000000000</row>
+    <row>000000000</row>
+    <row>000000000</row>
+    <row>000000000</row>
+    <row>000040000</row>
+    <row>0000b0000</row>
+    <row>0000b0000</row>
+    <row>000040000</row>
+  </rows>
+</pattern>

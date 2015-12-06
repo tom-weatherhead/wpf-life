@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Patterns/index.xml - The catalog of Life patterns available on the server -->
+
+<patterns>
+  <pattern>
+    <name>3-4 Menagerie</name>
+    <filename>3_4Menagerie.xml</filename>
+  </pattern>
+  <!--
+  <pattern>
+    <name>Glider</name>
+    <filename>Glider.xml</filename>
+  </pattern>
+  -->
+  <pattern>
+    <name>Glider Gun</name>
+    <filename>GliderGun.xml</filename>
+  </pattern>
+  <!--
+  <pattern>
+    <name>Glider Stopper</name>
+    <filename>GliderStopper.xml</filename>
+  </pattern>
+  -->
+  <pattern>
+    <name>Juggler</name>
+    <filename>Juggler.xml</filename>
+  </pattern>
+  <pattern>
+    <name>Menagerie</name>
+    <filename>Menagerie.xml</filename>
+  </pattern>
+  <pattern>
+    <name>Octagons</name>
+    <filename>Octagons.xml</filename>
+  </pattern>
+  <pattern>
+    <name>Puffer Trains</name>
+    <filename>PufferTrains.xml</filename>
+  </pattern>
+  <pattern>
+    <name>Puffer Trains 2</name>
+    <filename>PufferTrains2.xml</filename>
+  </pattern>
+  <pattern>
+    <name>Spinner</name>
+    <filename>Spinner.xml</filename>
+  </pattern>
+  <pattern>
+    <name>Static</name>
+    <filename>Static.xml</filename>
+  </pattern>
+</patterns>
